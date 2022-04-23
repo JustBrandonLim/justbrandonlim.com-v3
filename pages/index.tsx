@@ -17,7 +17,7 @@ const Home: NextPage = () => {
         <div className="flex flex-col gap-5 text-lg">
           <p>Hello! My name is Brandon and I love everything about programming. My passion in programming started way back in 2011 at the age of 12 when I got my first computer.</p>
           <p>Today, I am the proud co-founder of Beeware, a software solutions start-up.</p>
-          <p>My current goal now is to launch an online course in the near future to help beginners learn how to build their first webpage.</p>
+          <p>My goal is to launch an online course in the near future to help beginners learn how to build their first webpage.</p>
         </div>
       </section>
       <section id="projects" className="container max-w-3xl p-5 text-center">
