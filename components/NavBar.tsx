@@ -22,8 +22,8 @@ const NavBar: NextPage = () => {
                 <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
               </svg>
             ) : (
-              <svg xmlns="http://www.w3.org/2000/svg" className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-                <path strokeLinecap="round" strokeLinejoin="round" d="M4 6h16M4 12h16m-7 6h7" />
+              <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                <path strokeLinecap="round" strokeLinejoin="round" d="M4 6h16M4 12h16M4 18h16" />
               </svg>
             )}
           </button>
@@ -65,27 +65,37 @@ const NavBar: NextPage = () => {
         <ul className="flex flex-col items-center gap-10">
           <li>
             <Link href="/">
-              <a className="hover:text-sky-500">Home</a>
+              <a className="hover:text-sky-500" onClick={() => setMobileNavBarOpened(false)}>
+                Home
+              </a>
             </Link>
           </li>
           <li>
             <Link href="/#about">
-              <a className="hover:text-sky-500">About</a>
+              <a className="hover:text-sky-500" onClick={() => setMobileNavBarOpened(!mobileNavBarOpened)}>
+                About
+              </a>
             </Link>
           </li>
           <li>
             <Link href="/#projects">
-              <a className="hover:text-sky-500">Projects</a>
+              <a className="hover:text-sky-500" onClick={() => setMobileNavBarOpened(!mobileNavBarOpened)}>
+                Projects
+              </a>
             </Link>
           </li>
           <li>
             <Link href="/#contact">
-              <a className="hover:text-sky-500">Contact</a>
+              <a className="hover:text-sky-500" onClick={() => setMobileNavBarOpened(!mobileNavBarOpened)}>
+                Contact
+              </a>
             </Link>
           </li>
           <li>
             <Link href="/blog">
-              <a className="hover:text-sky-500">Blog</a>
+              <a className="hover:text-sky-500" onClick={() => setMobileNavBarOpened(!mobileNavBarOpened)}>
+                Blog
+              </a>
             </Link>
           </li>
         </ul>
