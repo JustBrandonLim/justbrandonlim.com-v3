@@ -8,7 +8,7 @@ interface Props {
 
 const Icon: NextPage<Props> = (props) => {
   return (
-    <a className="bg-sky-500 hover:bg-sky-400" href={props.href} aria-label={props.ariaLabel} target="_blank" rel="noopener noreferrer">
+    <a className="fill-slate-300 hover:fill-sky-500 w-6 h-6" href={props.href} aria-label={props.ariaLabel} target="_blank" rel="noopener noreferrer">
       {props.children}
     </a>
   );

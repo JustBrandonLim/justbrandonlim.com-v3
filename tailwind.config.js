@@ -8,10 +8,7 @@ module.exports = {
     },
     extend: {
       fontFamily: {
-        poppins: ["'Poppins', sans-serif", ...defaultTheme.fontFamily.sans],
         inter: ["'Inter', sans-serif", ...defaultTheme.fontFamily.sans],
-        roboto: ["'Roboto', sans-serif", ...defaultTheme.fontFamily.sans],
-        lexend: ["'Lexend', sans-serif", ...defaultTheme.fontFamily.sans],
       },
     },
   },
