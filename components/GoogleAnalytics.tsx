@@ -6,7 +6,7 @@ import siteConfig from "../site.config";
 const GoogleAnalytics: NextPage = () => {
   return (
     <>
-      <Script src={"https://www.googletagmanager.com/gtag/js?id=" + siteConfig.googleAnalyticsTag} strategy="afterInteractive" />
+      <Script src={"https://www.googletagmanager.com/gtag/js?id=" + siteConfig.googleAnalyticsTag} strategy="afterInteractive" async={true} />
       <Script id="gtag.js" strategy="afterInteractive">
         {`
           window.dataLayer = window.dataLayer || [];
