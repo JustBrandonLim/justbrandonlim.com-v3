@@ -7,7 +7,7 @@ const GoogleAnalytics: NextPage = () => {
   return (
     <>
       <Script src={"https://www.googletagmanager.com/gtag/js?id=" + siteConfig.googleAnalyticsTag} strategy="afterInteractive" />
-      <Script strategy="afterInteractive">
+      <Script id="gtag.js" strategy="afterInteractive">
         {`
           window.dataLayer = window.dataLayer || [];
           function gtag(){dataLayer.push(arguments);}
