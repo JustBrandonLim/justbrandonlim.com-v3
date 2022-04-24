@@ -17,19 +17,31 @@ const Home: NextPage = () => {
         <div className="flex flex-col gap-5 text-lg">
           <p>Hello! My name is Brandon and I love everything about programming. My passion in programming started way back in 2011 at the age of 12 when I got my first computer.</p>
           <p>Today, I am the proud co-founder of Beeware, a software solutions start-up.</p>
-          <p>My goal is to launch an online course in the near future to help beginners learn how to build their first webpage.</p>
+          <p>
+            My goal is to launch an online course in the near future to help
+            <br />
+            beginners learn how to build their first webpage.
+          </p>
         </div>
       </section>
-      <section id="projects" className="container max-w-3xl p-5 text-center">
-        <h1 className="mb-5 text-4xl font-bold text-white">Projects</h1>
-        <p className="text-lg">Coming soon!</p>
+      <section id="works" className="container max-w-3xl p-5 text-center">
+        <h1 className="mb-5 text-4xl font-bold text-white">Works</h1>
+        <ol className="flex flex-col gap-5 text-lg">
+          <li>How much ah?</li>
+          <li>TimetableGrabber - SIT</li>
+          <li>FastDrivingPractical</li>
+        </ol>
       </section>
       <section id="contact" className="container max-w-3xl p-5 text-center">
         <h1 className="mb-5 text-4xl font-bold text-white">Contact</h1>
         <div className="flex flex-col items-center gap-5 text-lg">
-          <p>I am always looking forward to making new connections, so feel free to drop a message!</p>
-          <a className="px-5 py-3 text-white transition-colors duration-300 ease-in-out border-2 rounded-full w-max border-sky-500 hover:bg-sky-500/30" href="mailto:hello@justbrandonlim.com" aria-label="Email" target="_blank" rel="noopener noreferrer">
-            Say Hello
+          <p>
+            I am always looking forward to making new connections,
+            <br />
+            so feel free to drop me a message!
+          </p>
+          <a className="px-10 py-3 text-base font-bold text-black bg-teal-400 rounded-full hover:bg-teal-300" href="mailto:hello@justbrandonlim.com" aria-label="Email" target="_blank" rel="noopener noreferrer">
+            SAY HELLO
           </a>
         </div>
       </section>
