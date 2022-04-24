@@ -5,9 +5,11 @@ import GoogleAnalytics from "@components/GoogleAnalytics";
 
 export default function MyApp({ Component, pageProps }: AppProps) {
   return (
-    <BasicLayout>
+    <>
       <GoogleAnalytics />
-      <Component {...pageProps} />
-    </BasicLayout>
+      <BasicLayout>
+        <Component {...pageProps} />
+      </BasicLayout>
+    </>
   );
 }

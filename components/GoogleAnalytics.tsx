@@ -5,18 +5,18 @@ import siteConfig from "../site.config";
 
 const GoogleAnalytics: NextPage = () => {
   return (
-    <Head>
-      <Script src={"https://www.googletagmanager.com/gtag/js?id=" + siteConfig.googleAnalyticsTag} />
-      <Script>
+    <>
+      <Script src={"https://www.googletagmanager.com/gtag/js?id=" + siteConfig.googleAnalyticsTag} strategy="afterInteractive" />
+      <Script strategy="afterInteractive">
         {`
           window.dataLayer = window.dataLayer || [];
           function gtag(){dataLayer.push(arguments);}
           gtag('js', new Date());
 
-          gtag('config', ${siteConfig.googleAnalyticsTag});
+          gtag('config', '${siteConfig.googleAnalyticsTag}');
         `}
       </Script>
-    </Head>
+    </>
   );
 };
 

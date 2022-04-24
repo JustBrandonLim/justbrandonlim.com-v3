@@ -28,7 +28,7 @@ const Home: NextPage = () => {
         <h1 className="mb-5 text-4xl font-bold text-white">Contact</h1>
         <div className="flex flex-col items-center gap-5 text-lg">
           <p>I am always looking forward to making new connections, so feel free to drop a message!</p>
-          <a className="px-5 py-3 text-white rounded-full w-max border-2 border-sky-500 hover:bg-sky-500/30 transition-colors duration-300 ease-in-out" href="mailto:hello@justbrandonlim.com" aria-label="Email" target="_blank" rel="noopener noreferrer">
+          <a className="px-5 py-3 text-white transition-colors duration-300 ease-in-out border-2 rounded-full w-max border-sky-500 hover:bg-sky-500/30" href="mailto:hello@justbrandonlim.com" aria-label="Email" target="_blank" rel="noopener noreferrer">
             Say Hello
           </a>
         </div>
