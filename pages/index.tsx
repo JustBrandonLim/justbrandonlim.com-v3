@@ -6,7 +6,7 @@ import BrandonLim from "@images/brandon-lim.png";
 const Home: NextPage = () => {
   return (
     <>
-      <SEO />
+      <SEO url="" />
       <section className="container flex flex-col items-center justify-center max-w-3xl min-h-screen gap-5 p-5 text-center">
         <Image className="rounded-full" src={BrandonLim} alt="Brandon Lim" layout="fixed" width={200} height={200} quality={100} placeholder="blur" />
         <h1 className="text-6xl font-bold text-white">Hi, I&apos;m Brandon Lim.</h1>
